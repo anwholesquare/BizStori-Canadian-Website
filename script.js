@@ -102,10 +102,13 @@ function postData() {
         phoneNumber: document.getElementById("mobile").value,
         emailAddress: document.getElementById("email").value
     };
-    fetch('https://script.google.com/macros/s/AKfycbyriMly3KYutLUrsVLj1qAShByvMZmM_wvwbcfSV33yyupf5LYODqHakrEvpttvx6albA/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbyxaxcu05wDi_wKnibk9u0W6p4iHTcKwZhgmLZ5Xo8WmceUSFCEPKhx79MDik4N0CUt/exec', {
+        redirect: "follow",
         method: 'POST',
-        contentType: 'application/json',
-        payload: JSON.stringify(data)
+        body: JSON.stringify(data),
+        headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+        }
     })
         .then(response => alert(response.text()))
         .then(text => console.log(text))
