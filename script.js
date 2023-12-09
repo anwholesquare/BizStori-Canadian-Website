@@ -13,6 +13,11 @@ document.getElementById("openModalBtn2").addEventListener("click", function () {
     showStep(1);
 });
 
+document.getElementById("openModalBtn3").addEventListener("click", function () {
+    document.getElementById("myModal").style.display = "block";
+    showStep(1);
+});
+
 document.getElementById("closeModalBtn").addEventListener("click", function () {
     document.getElementById("myModal").style.display = "none";
 });
