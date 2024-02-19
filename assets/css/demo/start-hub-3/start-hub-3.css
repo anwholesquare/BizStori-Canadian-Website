@@ -189,7 +189,7 @@
 }
 
 .carousel-text-lg .module-title-top h2 {
-	background: linear-gradient(to right, #CCD0FB, #CCD0FB, #4452F2);
+	background: linear-gradient(to left, #c8f3f4, #c8f3f4, #87e5e7, #70e0e2, #4cd8db);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -600,4 +600,3 @@
 		padding: 0 20px;
 	}
 }
-
